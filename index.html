@@ -198,10 +198,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2021-03-08 17:14:11 / Modified: 17:23:01" itemprop="dateCreated datePublished" datetime="2021-03-08T17:14:11+08:00">2021-03-08</time>
+              <time title="Created: 2021-03-08 17:14:11" itemprop="dateCreated datePublished" datetime="2021-03-08T17:14:11+08:00">2021-03-08</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-03-09 08:44:47" itemprop="dateModified" datetime="2021-03-09T08:44:47+08:00">2021-03-09</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -227,16 +233,16 @@
 <p>(吐槽:网上乱七八糟瞎写坐标系博客不知误导多少人，先搞清楚坐标系类型名称好吧，建议多看官网)</p>
 <h2 id="坐标系类型"><a href="#坐标系类型" class="headerlink" title="坐标系类型"></a>坐标系类型</h2><h3 id="1-GEOCCS-地心坐标系-Geocentric-Coordinate-system"><a href="#1-GEOCCS-地心坐标系-Geocentric-Coordinate-system" class="headerlink" title="1.GEOCCS-地心坐标系 (Geocentric Coordinate system)"></a>1.GEOCCS-地心坐标系 (Geocentric Coordinate system)</h3><p>​        地心坐标系不是基于地图投影的平面坐标系。它是一种地理坐标系，在此坐标系中，地球在一个从地心开始测量的右旋 XYZ 坐标系（3D 笛卡尔）中被建模为球体或旋转椭球体。X 轴指向本初子午线、Y 轴位于赤道平面上且与 X 轴成 90°，而 Z 轴则指向北极点。</p>
 <p>​        地心坐标系在ArcGIS内部被用作瞬变系统。作为多个地理（基准面）变换方法的一部分，它可以被用作计算框架。(ArcGIS内部计算时一般先将地理坐标系转成了对应的地心坐标)</p>
-<p><img src="%E5%9C%B0%E5%BF%83%E5%9D%90%E6%A0%87%E7%B3%BB.gif" alt="地心坐标系"></p>
+<p><img src="/%E5%9C%B0%E5%BF%83%E5%9D%90%E6%A0%87%E7%B3%BB.gif" alt="地心坐标系"></p>
 <h3 id="2-GEOGCS-地理坐标系-Geographic-Coordinate-system"><a href="#2-GEOGCS-地理坐标系-Geographic-Coordinate-system" class="headerlink" title="2.GEOGCS-地理坐标系(Geographic Coordinate system)"></a>2.GEOGCS-地理坐标系(Geographic Coordinate system)</h3><p>​        地理坐标系是一种使用经线和纬线的球面测量值来描述地球表面地理位置方位的方法。当地球作为球体建模时，它们是从地心到地球表面上的点的角度测量值（以度为单位）。当使用旋转椭球体（椭球体）时，可通过将与地球表面垂直的线延伸到赤道平面来测量纬度。除了赤道或两极外，这条线不会与地心相交。</p>
 <p>​        在地理坐标系中，球体被分为多个均等的部分，通常称为度；在一些国家也使用百分度。一个圆是 360°或 400 百分度。每度可细分为 60 分，每分包含 60 秒。</p>
 <p>​        地理坐标系包含纬线和经线。各条经线朝南北方向延伸，用于测量本初子午线东西的度数。值的范围介于 -180 到 +180°之间。纬线朝东西方向延伸，用于测量赤道南北的度数。值的范围介于 +90°（北极点）到 -90°（南极点）之间。</p>
 <p>​        赤道位于 0 度纬线上。通常，北半球具有正的纬度测量值，而南半球具有负的纬度测量值。经度用于测量东西方向的角度。经度测量值通常基于本初子午线，它是一条从北极点通过英格兰格林尼治并一直延伸到南极点的假想线。此角度是 0 经度。本初子午线往西通常记为负经度，往东记为正经度。例如，加利福尼亚州洛杉矶的纬度约为“正 33 度，56 分”，经度约为“负 118 度，24 分。”</p>
 <p>​        拥有全球数据集的用户通常使用地理坐标系在全球框架中存储和管理其数据，而将数据投影到本地平面坐标系进行编辑和分析。</p>
 <p>地图投影还使用地理坐标系中的纬度和经度值来引用参数，如中央子午线、标准纬线和起始纬度等。</p>
-<p><img src="%E5%9C%B0%E7%90%86%E5%9D%90%E6%A0%87%E7%B3%BB.gif" alt="地理坐标系"></p>
+<p><img src="/%E5%9C%B0%E7%90%86%E5%9D%90%E6%A0%87%E7%B3%BB.gif" alt="地理坐标系"></p>
 <h3 id="3-PROJCS-投影坐标系（Projected-coordinate-systems）"><a href="#3-PROJCS-投影坐标系（Projected-coordinate-systems）" class="headerlink" title="3.PROJCS-投影坐标系（Projected coordinate systems）"></a>3.PROJCS-投影坐标系（Projected coordinate systems）</h3><p>​        使用平面直角坐标系来展示地球,无论将地球视为球体还是旋转椭球体，都必须变换其三维曲面以创建平面地图图幅。此数学变换通常称作地图投影；将地理坐标系通过特定的投影方式变换形成的平面坐标系则为投影坐标系</p>
-<p><img src="%E5%9C%B0%E5%9B%BE%E6%8A%95%E5%BD%B1%E5%AE%B6%E6%97%8F.png" alt="地图投影家族"></p>
+<p><img src="/%E5%9C%B0%E5%9B%BE%E6%8A%95%E5%BD%B1%E5%AE%B6%E6%97%8F.png" alt="地图投影家族"></p>
 <p>注:Bursa Wolf 七参数变换方法适用于地心坐标，不能直接将其应用于地理坐标,需将地理坐标转换成地心坐标后才可以</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考:"></a>参考:</h2><ul>
 <li><p><a target="_blank" rel="noopener" href="https://desktop.arcgis.com/zh-cn/arcmap/10.3/guide-books/map-projections/geocentric-coordinate-system.htm">ArcGIS 地心坐标系</a></p>
